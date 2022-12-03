@@ -8,6 +8,7 @@ const EditProduct = () => {
   const [price, setPrice] = useState('');
   const navigate = useNavigate();
   const { id } = useParams();
+
   const updateProduct = async (e) => {
     e.preventDefault();
     await axios.put(

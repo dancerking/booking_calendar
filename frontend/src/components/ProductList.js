@@ -26,7 +26,10 @@ const ProductList = () => {
 
   return (
     <div>
-      <Link to="/add" className="button is-primary mt-5">
+      <Link
+        to="/product/add"
+        className="button is-primary mt-5"
+      >
         Add New
       </Link>
       <table className="table is-striped is-fullwidth">
@@ -46,7 +49,7 @@ const ProductList = () => {
               <td>{product.price}</td>
               <td>
                 <Link
-                  to={`/edit/${product.id}`}
+                  to={`/product/edit/${product.id}`}
                   className="button is-small is-info"
                 >
                   Edit
